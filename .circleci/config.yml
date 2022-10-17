@@ -2,9 +2,7 @@
 defaults: &defaults
   working_directory: ~/re-resizable
   docker:
-    - image: bokuweb/node-go-with-browser:latest
-      environment:
-        DISPLAY: ":99"
+    - image: circleci/node:16
 
 version: 2
 jobs:
